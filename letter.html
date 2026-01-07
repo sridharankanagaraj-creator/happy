@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Letter 💖</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fff0f5, #ffd6e8);
+      font-family: 'Segoe Script', cursive;
+      overflow-x: hidden;
+    }
+
+    .letter-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 25px;
+    }
+
+    .letter-title {
+      text-align: center;
+      font-size: 48px;
+      color: #8b0000;
+      margin-bottom: 40px;
+      text-shadow: 0 0 15px pink;
+    }
+
+    .letter-text {
+      font-size: 26px;
+      line-height: 1.8;
+      color: #5a0033;
+      white-space: pre-line; /* IMPORTANT */
+    }
+
+    .end-btn {
+      display: block;
+      margin: 60px auto 0;
+      padding: 14px 36px;
+      font-size: 20px;
+      background: hotpink;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      text-align: center;
+      width: fit-content;
+    }
+
+    /* CONFETTI */
+    .confetti {
+      position: fixed;
+      top: -10px;
+      font-size: 22px;
+      animation: fall linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="letter-container">
+  <div class="letter-title">💌 My Letter To You 💌</div>
+
+  <div class="letter-text">
+En uyire ❤️,
+
+Indha letter ezhudhum bodhu kooda  
+en heart romba silent-aa illa…  
+nee ninaichale adhu fast-aa beat aagudhu 💓
+
+Un sirippu,  
+un kovam,  
+un azhagana silence…  
+ellamey enakku romba pidikkum.
+
+Indha birthday mattum illa,  
+nee irukura ovvoru naalum  
+en life-la oru celebration 🎉
+
+sorry chello munthanwthu una kasta paduthura mari pesiten
+sorry nee ena manipiya nu thrla aana un kitta apdi pesiruka
+kudathu yen therla yetho thonuchi nu solliten da sorry ma apdi
+sonnathuku aprm yenala normala irruka mudila da ma sorry naa una 
+epovum kasta paduthitey irruken da manichiru ma aana yenala nee
+illama irruka mudiyathu ma nee illatha antha life yenala ninchi
+kuda pakka mudiythu haio naa oru muttal inkai unoda birthday la 
+wish you many more rutens of the day di my dear chellamaeyyy nee 
+en life la vrla naa nan yenaiye yelanthurupen da nee yenoda gift
+da aprm naa unaku oru gift anupiruken atha prichi paaru love you 
+chello una antha alavuku love panrn di yethum ninaikatha naa umkudave
+thha irrupen ippo nu eeppovumae naa unkuda thaa nee epo msg panlaum unaku
+naa replay panuven unakaga yethu venalum saivendi puritha onu mattum conform
+nee illa tha life aa venam sari ya unoda place la inoruthiyalam yenala vaailka
+mudiyathu nee mattum ithu moive diloge thaa but naa oru alter ithu unda property
+ ithula inoruthiku edame illa nee matttum thaa purithaa 😘I LOVE YOU DI PONADTTI 😘
+
+Naan irukura varaikkum,  
+un kai pidichu nadakka dhaan aasai 🤍  
+Un kanneer varama paathuka,  
+un sirippu mattum dhaan paakka.
+
+Happy Birthday my love 🎂💖  
+Indha ulagathula enakku kidaicha  
+best gift neethaan.
+
+Forever yours,  
+❤️
+  </div>
+
+  <a href="end.html" class="end-btn">Next ➝</a>
+</div>
+
+<script>
+/* CONFETTI FULL PAGE */
+setInterval(() => {
+  const confetti = document.createElement("div");
+  confetti.classList.add("confetti");
+  confetti.innerHTML = ["🎉","🎊","💖","✨","🎈"][Math.floor(Math.random()*5)];
+  confetti.style.left = Math.random() * 100 + "vw";
+  confetti.style.animationDuration = Math.random() * 3 + 2 + "s";
+  document.body.appendChild(confetti);
+
+  setTimeout(() => confetti.remove(), 5000);
+}, 300);
+</script>
+
+</body>
+</html>
